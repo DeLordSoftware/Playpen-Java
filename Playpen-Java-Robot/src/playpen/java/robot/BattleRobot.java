@@ -11,22 +11,15 @@ package playpen.java.robot;
  */
 public class BattleRobot {
 
-    public enum Robot_ATT1 {
-        POSITION_X,
-        POSITION_Y,
-        FUEL,
-        SIZE;
-    }
-
-    private int iX_Position = 0;
+       private int iX_Position = 0;
     private int iY_Position = 0;
     private int iFuel = 0;
 
     public BattleRobot(int[] Robot) {
         System.out.println("Robot... Get ready to battle");
-        iX_Position = Robot[Robot_ATT1.POSITION_X.ordinal()];
-        iY_Position = Robot[Robot_ATT1.POSITION_Y.ordinal()];
-        iFuel = Robot[Robot_ATT1.FUEL.ordinal()];
+        iX_Position = Robot[RobotEnum.Robot_ATT.POSITION_X.ordinal()];
+        iY_Position = Robot[RobotEnum.Robot_ATT.POSITION_Y.ordinal()];
+        iFuel = Robot[RobotEnum.Robot_ATT.FUEL.ordinal()];
     }
 
     public int[] getRobotStatus() {

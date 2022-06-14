@@ -11,19 +11,12 @@ package playpen.java.robot;
  */
 public class PlaypenJavaRobot {
 
-    public enum Robot_ATT {
-        POSITION_X,
-        POSITION_Y,
-        FUEL,
-        SIZE;
-    }
-
     public static void main(String[] args) {
         // Created arena
-        int[] aTheRobot = new int[Robot_ATT.SIZE.ordinal()];
-        aTheRobot[Robot_ATT.POSITION_X.ordinal()] = -10;
-        aTheRobot[Robot_ATT.POSITION_Y.ordinal()] = 2;
-        aTheRobot[Robot_ATT.FUEL.ordinal()] = 77;
+        int[] aTheRobot = new int[RobotEnum.Robot_ATT.SIZE.ordinal()];
+        aTheRobot[RobotEnum.Robot_ATT.POSITION_X.ordinal()] = -10;
+        aTheRobot[RobotEnum.Robot_ATT.POSITION_Y.ordinal()] = 2;
+        aTheRobot[RobotEnum.Robot_ATT.FUEL.ordinal()] = 77;
 
         //Create Robot 
         System.out.println("Battle bot time");
