@@ -11,7 +11,7 @@
  */
 public class PlaypenJavaRobot {
 
-   /* public static void main(String[] args) {
+    public static void main(String[] args) {
         // Created arena
         int[] aTheRobot = new int[3];
         aTheRobot[0] = -10;
@@ -25,6 +25,6 @@ public class PlaypenJavaRobot {
 
         for (int i : returnRobot) {
             System.out.println("Battle Over " + i);
-        }
-    }*/
+        }*/
+    }
 }
