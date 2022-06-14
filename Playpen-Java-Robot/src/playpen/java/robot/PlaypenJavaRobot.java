@@ -20,8 +20,8 @@ public class PlaypenJavaRobot {
 
         //Create Robot 
         System.out.println("Battle bot time");
-        BattleRobot battleRobot = new BattleRobot(aTheRobot);
-        int[] returnRobot = battleRobot.getRobotStatus();
+        BattleRobot Robot = new BattleRobot(aTheRobot);
+        int[] returnRobot = Robot.getRobotStatus();
 
         for (int i : returnRobot) {
             System.out.println("Battle Over " + i);
