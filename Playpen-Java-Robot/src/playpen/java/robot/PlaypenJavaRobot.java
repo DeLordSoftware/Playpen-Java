@@ -11,6 +11,13 @@ package playpen.java.robot;
  */
 public class PlaypenJavaRobot {
 
+    public enum Robot_ATT {
+        POSITION_X,
+        POSITION_Y,
+        FUEL,
+        SIZE;
+    }
+
     public static void main(String[] args) {
         // Created arena
         int[] aTheRobot = new int[Robot_ATT.SIZE.ordinal()];
